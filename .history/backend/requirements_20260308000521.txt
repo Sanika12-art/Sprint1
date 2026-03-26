@@ -4,5 +4,3 @@ scikit-learn
 pandas
 numpy
 joblib
-jinja2
-python-multipart
