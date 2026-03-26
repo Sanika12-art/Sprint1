@@ -33,7 +33,12 @@ def clean_text(text):
 # =============================
 # Test PostgreSQL Connection
 # =============================
-
+try:
+    conn = get_connection()
+    print("PostgreSQL connected successfully")
+    conn.close()
+except Exception as e:
+    print("PostgreSQL connection error:", e)
 
 # =============================
 # Create FastAPI App
